@@ -21,14 +21,17 @@ function init() {
     switch (current) {
       case 'air-horn':
         image.setAttribute('src', "assets/images/air-horn.svg");
+        image.setAttribute('alt', "Image of air horn");
         audio.setAttribute('src', "assets/audio/air-horn.mp3");
         break;
       case 'car-horn':
         image.setAttribute('src', "assets/images/car-horn.svg");
+        image.setAttribute('alt', "Image of car horn");
         audio.setAttribute('src', "assets/audio/car-horn.mp3");
         break;
       case 'party-horn':
         image.setAttribute('src', "assets/images/party-horn.svg");
+        image.setAttribute('alt', "Image of party horn");
         audio.setAttribute('src', "assets/audio/party-horn.mp3");
         break;
     }
@@ -55,7 +58,6 @@ function init() {
       audio.play();
     }
 
-    // how to create confetti?
     if (current === 'party-horn')
       jsConfetti.addConfetti()
   });
